@@ -10,7 +10,7 @@ const {
 
 const express = require('express');
 const router = express.Router();
-const containerName = 'file';
+const containerName = process.env.CONTAINER_NAME;
 const multer = require('multer');
 const inMemoryStorage = multer.memoryStorage();
 const uploadStrategy = multer({ storage: inMemoryStorage }).array('image',4);
