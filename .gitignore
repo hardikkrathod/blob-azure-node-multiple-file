@@ -4,13 +4,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-=======
-lerna-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
 
 # Runtime data
 pids
@@ -23,19 +16,12 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-<<<<<<< HEAD
-=======
 *.lcov
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
 
 # nyc test coverage
 .nyc_output
 
-<<<<<<< HEAD
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-=======
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -54,27 +40,21 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
-<<<<<<< HEAD
-=======
 # TypeScript cache
 *.tsbuildinfo
 
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
 
-<<<<<<< HEAD
-=======
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
 
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
 # Optional REPL history
 .node_repl_history
 
@@ -86,11 +66,6 @@ typings/
 
 # dotenv environment variables file
 .env
-<<<<<<< HEAD
-
-# next.js build output
-.next
-=======
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -123,4 +98,3 @@ dist
 
 # TernJS port file
 .tern-port
->>>>>>> cd2b34c5e564d64addcab5bb9d6df998aa62cc93
