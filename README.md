@@ -12,8 +12,7 @@ npm start
 
 ## .env
 Add below variables
-```python
-import foobar
+```bash
 
 AZURE_STORAGE_ACCOUNT_NAME= <AZURE ACCOUNT NAME>
 AZURE_STORAGE_ACCOUNT_ACCESS_KEY= <AZURE FILE ACCESS KEY>
