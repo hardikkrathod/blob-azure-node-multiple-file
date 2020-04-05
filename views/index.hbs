@@ -1,0 +1,64 @@
+<h2>Upload File</h2>
+<form id="upload-form" action="/" method="POST" enctype="multipart/form-data">
+  <h2>Select files to upload:</h2>
+  <div class="upload-container"><input id="file-picker" type="file" name="image" multiple></div>
+  <div><input type="submit" value="Upload a File"></div>
+</form>
+
+
+
+<p id="message">{{message}}</p>
+
+<h2>Uploaded Files</h2>
+  {{!-- <img src="https://{{../accountName}}.blob.core.windows.net/{{../containerName}}/{{name}}"> --}}
+<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Uploaded</th>
+            </tr>
+        </thead>
+        <tbody>
+          {{#each this.thumbnails}}
+            <tr>
+                <td><a href="https://{{../accountName}}.blob.core.windows.net/{{../containerName}}/{{name}}">{{name}}</a></td>
+                <td>
+                {{properties.lastModified}}
+           
+                </td>
+            
+            </tr>
+            {{/each}}
+        </tbody>
+        
+    </table>
+
+<hr>
+<p>This app has no official privacy policy. Your data will be uploaded to Azure. </p>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const message = document.getElementById('message');
+    const picker = document.getElementById('file-picker');
+
+    document.getElementById('upload-form').addEventListener('submit', (e) => {
+
+      message.innerText = '';
+
+      if(!picker.files.length) {
+        message.innerText = 'Please slect a file to upload.';
+        e.preventDefault();
+        return false;
+      }
+      else{
+        message.innerText = 'Uploading...';
+      }
+    });
+
+  });
+  $(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
