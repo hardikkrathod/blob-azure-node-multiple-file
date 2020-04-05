@@ -58,7 +58,7 @@ router.get('/', async (req, res, next) => {
     };
 
     if (listBlobsResponse.segment.blobItems.length) {
-      viewData.thumbnails = listBlobsResponse.segment.blobItems;
+      viewData.filedata = listBlobsResponse.segment.blobItems;
     }
   } catch (err) {
     viewData = {
